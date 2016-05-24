@@ -1,0 +1,58 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "type": "object",
+    "extends" : {
+        "$ref" : "reply.json"
+    },
+    "properties": {
+        "protocol_version": {
+            "type": "string"
+        },
+        "implementation": {
+            "type": "string"
+        },
+        "implementation_version": {
+            "type": "string"
+        },
+        "language_info":{
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                },
+                "mimetype": {
+                    "type": "string"
+                },
+                "file_extension": {
+                    "type": "string"
+                },
+                "pygments_lexer": {
+                    "type": "string"
+                },
+                "nbconvert_exporter": {
+                    "type": "string"
+                }
+            }
+        },
+        "banner": {
+            "type": "string"
+        },
+        "help_links": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

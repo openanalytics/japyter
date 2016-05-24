@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "type": "object",
+    "extends" : {
+        "$ref" : "broadcast.json"
+    },
+    "properties": {
+        "source": {
+            "type": "string"
+        },
+        "data": {
+            "type": "object"
+        },
+        "metadata": {
+            "type": "object"
+        }
+    }
+}

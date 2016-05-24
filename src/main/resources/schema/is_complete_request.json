@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "type": "object",
+    "extends" : {
+        "$ref" : "request.json"
+    },
+    "properties": {
+        "code": {
+            "type": "string",
+            "required": true
+        }
+    }
+}

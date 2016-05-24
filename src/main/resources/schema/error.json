@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "type": "object",
+    "extends" : {
+        "$ref" : "broadcast.json"
+    },
+    "properties": {
+        "execution_count": {
+            "type": "integer"
+        },
+        "payload": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        },
+        "user_expressions": {
+            "$ref": "user_expressions.json"
+        },
+        "ename": {
+            "type": "string"
+        },
+        "evalue": {
+            "type": "string"
+        },
+        "traceback": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

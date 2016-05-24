@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "type": "object",
+    "properties": {
+        "msg_id": {
+            "type": "string"
+        },
+        "username": {
+            "type": "string"
+        },
+        "session": {
+            "type": "string"
+        },
+        "msg_type": {
+            "type": "string"
+        },
+        "version": {
+            "type": "string"
+        },
+        "date": {
+            "type": "string"
+        }
+    }
+}

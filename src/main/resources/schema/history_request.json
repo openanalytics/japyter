@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "type": "object",
+    "extends" : {
+        "$ref" : "request.json"
+    },
+    "properties": {
+        "output": {
+            "type": "boolean",
+            "default": false
+        },
+        "raw": {
+            "type": "boolean",
+            "default": false
+        },
+        "hist_access_type": {
+            "type": "string",
+            "enum": ["range", "tail", "search"],
+            "required": true
+        },
+        "session": {
+            "type": "integer"
+        },
+        "start": {
+            "type": "integer"
+        },
+        "stop": {
+            "type": "integer"
+        },
+        "n": {
+            "type": "integer"
+        },
+        "pattern": {
+            "type": "string"
+        },
+        "unique": {
+            "type": "boolean"
+        }
+    }
+}

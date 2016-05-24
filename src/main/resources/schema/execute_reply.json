@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "type": "object",
+    "extends" : {
+        "$ref" : "reply.json"
+    },
+    "properties": {
+        "status": {
+            "type": "string",
+            "enum": ["ok", "error", "abort"]
+        },
+        "execution_count": {
+            "type": "integer"
+        },
+        "payload": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        },
+        "user_expressions": {
+            "$ref": "user_expressions.json"
+        },
+        "ename": {
+            "type": "string"
+        },
+        "evalue": {
+            "type": "string"
+        },
+        "traceback": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

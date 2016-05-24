@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "type": "object",
+    "extends" : {
+        "$ref" : "reply.json"
+    },
+    "properties": {
+        "status": {
+            "type": "string",
+            "enum": ["ok", "error"]
+        },
+        "found": {
+            "type": "boolean"
+        },
+        "data": {
+            "type": "object"
+        },
+        "metadata": {
+            "type": "object"
+        }
+    }
+}

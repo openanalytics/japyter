@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "type": "object",
+    "extends" : {
+        "$ref" : "reply.json"
+    },
+    "properties": {
+        "status": {
+            "type": "string",
+            "enum": ["ok", "error"]
+        },
+        "matches": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "cursor_start": {
+            "type": "integer"
+        },
+        "cursor_end": {
+            "type": "integer"
+        },
+        "metadata": {
+            "type": "object"
+        }
+    }
+}
